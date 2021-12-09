@@ -3,12 +3,15 @@
     <string name="social_banner">Best social app to make new friends</string>
 
     <string name="beginning_login">Login</string>
+    <string name="beginning_sign_up">registrar</string>
 
-    <string name="beginning_sign_up">Sign Up</string>
+    <string name="signup_full">Full Name</string>
+
     <string name="login_text_one">Let\&#39;s sign you in.</string>
 
     <string name="login_text_tw">welcome back. You\&#39;ve been missed!</string>
     <string name="login_username">Phone, email or username</string>
+    <string name="helper_text">*Requerido</string>
 
     <string name="login_password">Password</string>
     <string name="login_button">sign in</string>
