@@ -89,9 +89,6 @@
             app:endIconMode="password_toggle"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:errorEnabled="true"
-            app:counterEnabled="true"
-            app:counterMaxLength="6">
-
             app:boxCornerRadiusBottomEnd="27dp"
             app:boxCornerRadiusBottomStart="27dp"
             app:boxCornerRadiusTopEnd="27dp"

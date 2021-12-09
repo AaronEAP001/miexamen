@@ -17,8 +17,7 @@ public class BeginningFrame extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.beginning_frame,container,false);
         MaterialButton loginButton = view.findViewById(R.id.login_button);
-
-        //Accion para a
+        MaterialButton signupButton = view.findViewById(R.id.sign_up);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +25,13 @@ public class BeginningFrame extends Fragment {
                 ((NavigationHost)getActivity()).navigateTo(new Login_Frame(),false);
             }
         });
+        signupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((NavigationHost)getActivity()).navigateTo(new SignupFrame(),false);
+            }
+        });
+
         return view;
 
     }
