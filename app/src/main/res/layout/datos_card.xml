@@ -3,78 +3,84 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    app:cardBackgroundColor="@color/teal_200"
-    app:cardCornerRadius="16dp"
+    app:cardCornerRadius="18dp"
     app:cardElevation="@dimen/cardview_default_elevation"
     app:cardPreventCornerOverlap="true"
     >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:padding="16dp">
-        <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/datos_image_user"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="?attr/colorPrimary"/>
-        <TextView
-            android:id="@+id/datos_user_name"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/datos_image_user"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="7dp"
+                android:background="?attr/colorPrimary"/>
+            <TextView
+                android:id="@+id/datos_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:text="juad fdfgf"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="juad fdfgf"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            />
+            android:orientation="vertical"
+            >
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/datos_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_grid_card_image_height"
+                android:background="?attr/colorControlHighlight"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/datos_image"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/product_grid_card_image_height"
-            android:background="?attr/colorControlHighlight"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-        <TextView
-            android:id="@+id/datos_mensajes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="La lala dfsf efsf rgdgdr reger erg gerge rgegre gerg ergerg."
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="190dp"
-        android:layout_height="30dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/datos_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="Coment"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            />
-        <TextView
-            android:id="@+id/datos_title2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="LIKE"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/datos_mensajes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="La gerg ergerg."
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                >
+                <TextView
+                    android:id="@+id/datos_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Coment"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    />
+                <TextView
+                    android:id="@+id/datos_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="LIKE"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

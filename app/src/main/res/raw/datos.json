@@ -2,8 +2,8 @@
   {
     "id_user": 1,
     "user_name":"@Ana_Diaz",
-    "User_foto": "https://picsum.photos/id/1027/2848/4272",
-    "post_foto": "https://i.picsum.photos/id/180/2400/1600.jpg?hmac=Ig-CXcpNdmh51k3kXpNqNqcDYTwXCIaonYiBOnLXBb8",
+    "User_foto": "https://cdn.pixabay.com/photo/2016/03/23/04/01/woman-1274056_960_720.jpg",
+    "post_foto": "https://cdn.pixabay.com/photo/2021/12/06/08/55/christmas-market-6849578_960_720.jpg",
     "post_msm": "Un día uper bonito con mis amigo, seguimos creciendo en la empresa. #al100 #Zzz #Aea",
     "coment": "16",
     "like": "20"
@@ -65,8 +65,8 @@
   {
     "id_user": 8,
     "user_name":"@Mafer_Paz",
-    "User_foto": "https://picsum.photos/id/237/3500/2095",
-    "post_foto": "https://picsum.photos/id/119/3264/2176",
+    "User_foto": "https://cdn.pixabay.com/photo/2021/09/08/15/24/couple-6607143_960_720.jpg",
+    "post_foto": "https://cdn.pixabay.com/photo/2021/12/06/10/55/hamburg-6849995_960_720.jpg",
     "post_msm": "bibendum libero enim, a ultricies erat tempor sed. Integer viverra odio eget faucibus congue. #Ulima #from",
     "coment": "1K",
     "like": "1.2K"
