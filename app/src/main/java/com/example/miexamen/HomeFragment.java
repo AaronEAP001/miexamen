@@ -12,6 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.miexamen.network.MiExamenEntry;
 
 public class HomeFragment extends Fragment {
 
@@ -25,6 +29,16 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.home_frame,container,false);
         setUpToolbar(view);
+        RecyclerView recyclerView = view.findViewById(R.id.recycle_view);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(),1,GridLayoutManager.VERTICAL,false));
+        DatosCardRecyclerViewAdapter adapter = new DatosCardRecyclerViewAdapter(
+                MiExamenEntry.initMiExamenEntryList(getResources()));
+        recyclerView.setAdapter(adapter);
+        int largePadding = getResources().getDimensionPixelSize(R.dimen.product_grid_spacing);
+        int smallPadding = getResources().getDimensionPixelSize(R.dimen.product_grid_spacing_small);
+        recyclerView.addItemDecoration(new DatosGrifItemDecoration(largePadding,smallPadding));
+
         return view;
     }
 

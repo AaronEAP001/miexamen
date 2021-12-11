@@ -22,7 +22,6 @@ import java.lang.reflect.Type;
 public class MiExamenEntry {
     private static final String TAG = MiExamenEntry.class.getSimpleName();
 
-    public final Integer id_user;
     public final Uri dynamiUser;
     public final String User_foto;
     public final String user_name;
@@ -34,8 +33,7 @@ public class MiExamenEntry {
     public final String coment;
     public final String like;
 
-    public MiExamenEntry(Integer id_user,String dynamiUser, String User_foto, String user_name, String dynamiPost, String post_foto, String post_msm,String coment, String like){
-        this.id_user=id_user;
+    public MiExamenEntry(String dynamiUser, String User_foto, String user_name, String dynamiPost, String post_foto, String post_msm,String coment, String like){
         this.dynamiUser=Uri.parse(dynamiUser);
         this.User_foto=User_foto;
         this.user_name=user_name;
