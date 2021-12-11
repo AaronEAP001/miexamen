@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:padding="3dp"
-                android:text="juad fdfgf"
+                android:text="name"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                 />
         </LinearLayout>
@@ -37,11 +37,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
+
             <com.android.volley.toolbox.NetworkImageView
                 android:id="@+id/datos_image"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/product_grid_card_image_height"
-                android:background="?attr/colorControlHighlight"/>
+                android:background="@color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
